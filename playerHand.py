@@ -18,6 +18,14 @@ class playerHand:
     def getName(self):
         return self.playerName
     
+class playerFrequencies:
+
+    def __init__(self):
+        self.VPIP = random.uniform(5,45)
+        self.PFR =random.uniform(10,30)
+        self.THREE_BET_PERCENTAGE = random.uniform(5, 15)
+        self.FOLD_To_3BET= random.uniform(35,50)   
+            
 class HandGenerator:
     def __init__(self, numPlayers):
         self.numPlayers = numPlayers
@@ -81,5 +89,4 @@ class HandGenerator:
 
         
         
-
 
